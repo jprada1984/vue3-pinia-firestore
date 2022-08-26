@@ -1,6 +1,7 @@
 
 <template>
   <h1>App base</h1>
+  <a-button type="primary">Primary Button</a-button>
   <nav v-if="!userStore.loadingSession">
     <router-link to="/" v-if="userStore.userData">Home</router-link> |
     <router-link to="/register" v-if="!userStore.userData">Register</router-link> |
